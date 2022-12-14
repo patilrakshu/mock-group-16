@@ -12,10 +12,13 @@ public class Listner extends BaseNew implements ITestListener
 	public void onTestFailure(ITestResult result)
 	{
 		Reporter.log("TC "+result.getName()+" is failed...", true);
-		try {
+		try 
+		{
 			UtilityCommonMethod.takeScreenShot(driver, result.getName());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		} 
+		catch (IOException e) 
+		{
+		// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
