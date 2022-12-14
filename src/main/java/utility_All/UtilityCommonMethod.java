@@ -15,7 +15,6 @@ import org.testng.Reporter;
 
 public class UtilityCommonMethod 
 {
-	
 	//wait
 	public static void wait(WebDriver driver, int waitTime) 
 	{
